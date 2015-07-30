@@ -1,0 +1,26 @@
+#land {
+	height:100vh;
+	width: 100%;
+	background-image: image-url('land.jpeg');
+	background-size: cover;
+	opacity: 0.8;
+
+	color: #000;
+	text-align: center;
+
+	h2 {
+		font-weight:400;
+		font-size:3vw;
+	}
+
+	h1 {
+		font-weight: 700;
+		font-size:7vw;
+		margin: 6vh 0 10vh;
+	}
+
+	p {
+		font-size: 1.5vw;
+		margin-top: 20vh;
+	}
+}
