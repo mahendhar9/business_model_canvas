@@ -3,7 +3,7 @@
 	<h2>Create, Version, Track and share your</h2>
 	<h1>Business Model Canvas</h1>
 
-	<%= link_to fa_icon("linkedin-square", text:"Login with Linkedin"), '#', class: "btn btn-lg btn-primary" %>
-	<p>With <%= fa_icon "heart" %> from Mahendhar</p>
+	<%= link_to fa_icon("linkedin-square", text:"Login with Linkedin"),user_omniauth_authorize_path(:linkedin), class: "btn btn-lg btn-primary" %>
+	<p>With <%= fa_icon "heart", class: "heart-icon" %> from Mahendhar</p>
 	</div>
 </div>

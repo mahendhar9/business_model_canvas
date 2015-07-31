@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
-  def land
-  end
+	def land
+		if user_signed_in?
+			render "dashboard"
+		end
+	end
 end
