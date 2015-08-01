@@ -1,9 +1,61 @@
+body {
+	min-height: 100vh;
+	margin-bottom: 72px;
+}
+
 .vcenter {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	border: 1px solid transparent;
-	
-	
+}
+
+footer {
+	background-color: $dark-bg-color;
+	color: $light-font-color;
+	height: 48px;
+	padding: 0px 15px;
+	box-sizing: border-box;
+
+	img {
+		height: 36px;
+		border: 2px solid #777;
+		transition: all 0.3s ease-in;
+		cursor: pointer;
+
+		&:hover {
+			height: 40px;
+			border-width: 0;
+		}
+	}
+
+	#profile-pic-container, #brand-pic-container {
+		background-color: $dark-bg-color;
+		padding: 5px 10px;
+		transition: background-color 0.3s ease-in;
+
+		&:hover, &.active {
+		background-color: $dark-bg-color;
+		}
+	}
+
+	#user_details {
+		right: 15px;
+	}
+	#brand-details {
+		left: 15px;
+	}
+
+	#user_details, #brand-details {
+		position: absolute;
+		bottom: 50px;
+		background-color: $dark-bg-color;
+		color: $light-font-color;
+		padding: 15px 40px;
+	}
+
+	.menu {
+		margin-top: 5px;
+	}
 }
 

@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class = "col-md-12">
+			<footer class="navbar-fixed-bottom">
+  <div id="brand-pic-container" class="footer-dropup-trigger pull-left" data-target="#brand-details">
+    <%= image_tag current_user.image, id: "brand-pic", class: "img-circle" %>
+  </div>
+  <div id="brand-details" class="hidden">
+    Business Model Canvas
+  </div>
+
+  <div id="profile-pic-container" class="footer-dropup-trigger pull-right" data-target="#user_details">
+    <%= image_tag current_user.image, id: 'profile-pic', class: "img-circle" %>
+  </div>
+  <div id="user_details" class="hidden">
+    Loggedin as <br>
+    <%= current_user.name %> <br>
+    <%= link_to fa_icon('sign-out', text: 'Logout'), destroy_user_session_path, method: :delete %>
+  </div>
+</footer>
+		</div>
+	</div>
+</div>
